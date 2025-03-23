@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 380px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    padding: 25px;
+    position: relative;
+}
+.profile::before{
+    content:'';
+    position: absolute;
+    background: #4070f4;
+    height: 36%;
+    width: 100%;
+    top: 0;
+    border-radius: 24px 24px 0 0;
+
+}
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #4070f4;
+}
+.image .profile-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #fff;
+    padding: 2px;
+}
+.profile .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-data .name{
+    color: #000;
+    font-size: 22px;
+    font-weight: 400px;
+}
+.text-data .job{
+    color: #000;
+    font-size: 18px;
+    font-weight: 200px;
+}
+.profile .media-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.media-buttons .link{
+    background: #4070f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    padding: 8px;
+    width: 34px;
+    color: #fff;
+    border-radius: 50px;
+    margin: 5px;
+    text-decoration: none;   
+}
+.profile .buttons{
+    margin-top: 10px;
+    
+}
+.buttons .btn{
+    background: #4070f4;
+    border-radius: 50px;
+    border: none;
+    padding: 8px;
+    color: #fff;
+}
+.btn:hover{
+    background: #0e4bf1;
+}
+.profile .analytics{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.analytics .data{
+    border-right: 2px solid #e7e7e7;
+    padding: 0 20px;
+}
+.data:last-child{
+    border: none;
+}
