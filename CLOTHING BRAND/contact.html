@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | RADICAL CLOTHING CO.</title>
+   
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <Link rel="stylesheet" href="contact.css"
+</head>
+<body>
+    <header>
+        <h1>Join the Resistance</h1>
+        <p class="subhead">No bots, just humans</p>
+    </header>
+    
+    <div class="container">
+        <div class="contact-methods">
+            <div class="contact-item">
+                <h2>General Inquiries</h2>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:hello@radicalclothing.com">hello@radicalclothing.com</a></p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><small>Mon-Fri, 9AM–5PM EST</small></p>
+            </div>
+            
+            <div class="contact-item">
+                <h2>Collabs & Wholesale</h2>
+                <p><i class="fas fa-handshake"></i> <a href="mailto:collab@radicalclothing.com">collab@radicalclothing.com</a></p>
+                <p><em>Artists, stockists, and rebels welcome.</em></p>
+            </div>
+            
+            <div class="contact-item">
+                <h2>Press & Media</h2>
+                <p><i class="fas fa-newspaper"></i> <a href="mailto:press@radicalclothing.com">press@radicalclothing.com</a></p>
+            </div>
+            
+            <div class="contact-item">
+                <h2>HQ Address</h2>
+                <p><i class="fas fa-map-marker-alt"></i> Makerere Kavule Ave, plot 666<br>
+                Soweto, Namuwongo Yoka Zone</p>
+                <p><em>By appointment only—no silent bystanders.</em></p>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        
+        <div class="contact-form">
+            <h2>Drop Your Manifesto</h2>
+            <form action="/submit" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">I'm reaching out about...</label>
+                    <select id="subject" name="subject">
+                        <option value="order">Order Question</option>
+                        <option value="collab">Collaboration</option>
+                        <option value="press">Press Inquiry</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2025 RADICAL CLOTHING CO. | All Rights Reserved (but we believe in sharing)</p>
+        <nav>
+            <a href="/">Home</a> | 
+            <a href="about.html">About</a> | 
+            <a href="contact.html">Join the Resistance</a>
+        </nav>
+    </footer>
+</body>
+</html>

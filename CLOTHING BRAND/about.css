@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #333645;
+    color: aqua;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-bottom: 1px solid aqua;
+    padding: 10px;
+    box-shadow: 0 0 20px #1e1e2f; 
+}
+#our-story{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 0 20px #1e1e2f;
+    border-bottom: 1px solid aqua;
+}
+.mission-statement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+}
+.founder-quote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+#facts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+footer nav a{
+    color: aqua;
+    margin-top: 5px;
+}
+/* Responsive Media Queries */
+@media (max-width: 1200px) {
+    body {
+        font-size: 16px;
+    }
+    
+    header, #our-story, .mission-statement, .founder-quote, #facts, footer {
+        margin: 15px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header, #our-story, .mission-statement, .founder-quote, #facts, footer {
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    .mission-statement ul {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 13px;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    
+    header, #our-story, .mission-statement, .founder-quote, #facts, footer {
+        margin: 5px;
+        padding: 10px 5px;
+    }
+    
+    footer nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    footer nav a {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        font-size: 12px;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .founder-quote {
+        font-size: 1.1rem;
+        padding: 10px 5px;
+    }
+}
